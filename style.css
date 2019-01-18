@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* End CSS RESET */
+
+/* Start CSS */
+
+body {
+	height: 100vh;
+	background: linear-gradient(100deg, rgba(43,59,74,1) 0%, rgba(41,41,41,1) 100%);
+}
+
+.nav-container {
+	width: 100%;
+	height: 80px;
+}
+.nav-logo-container {
+	display: inline-block;
+	width: 49%;
+}
+.nav-logo {
+	display: inline-block;
+}
+
+.nav-logo img {
+	width: 50px;
+	height: 50px;
+}
+
+.nav-logo-text {
+	text-decoration: none;
+	vertical-align: 50%;
+	color: white;
+	font-family: 'Noto Sans';
+	font-size: 1.5em;
+}
+
+.nav {
+	display: inline-block;
+	width: 49%;
+	vertical-align: 50%;
+}
+
+.nav-list {
+	float: right;
+}
+
+.nav-list-item {
+	display: inline-block;
+	margin: 0 14px;
+	font-family: 'Noto Sans';
+}
+
+.nav-list-item a {
+	text-decoration: none;
+	color: white;
+}
+
+
+.shopping-cart-logo {
+	width: 30px;
+	height: 30px;
+}
+
+/* Main Section */
+
+/* .jumbotron {
+	background: url(./images/rawpixel-1162846-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 25% 40%;
+
+} */
+
+.container-1 {
+	display: flex;
+	/* align-items: flex-end; */
+	/* align-items: flex-start; */
+	/* flex-direction: column; */
+	flex-direction: row;
+	align-items: center;
+	height: 80vh;
+}
+
+.shoe-detail-section {
+	font-family: 'Noto Sans';
+	color: white;
+	flex: 2;
+}
+
+.shoe-img-container {
+	width: 200px;
+	height: 200px;
+}
+
+.shoe-img {
+	width: 30%;
+}
+
+.shoe-price-section {
+	flex: 1;
+	font-family: 'Noto Sans';
+	color: white;
+}
+
+.container-2 {
+	height: 20vh;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.shoe-specifications {
+	background: rgba(33, 44, 55, 0.728);
+}
+
+.spec-items {
+	
+}
+
+.spec-item {
+	font-family: 'Noto Sans';
+	color: white;
+	display: inline-block;
+	margin: 20px;
+}
