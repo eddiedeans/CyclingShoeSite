@@ -1,0 +1,73 @@
+body {
+  height: 100vh;
+}
+
+.container-1 {
+  display: flex;
+  flex-flow: row wrap;
+  background: url(./images/image.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.nav-bar {
+  border: 5px red solid;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 100%;
+  height: 100px;
+  align-items: center;
+}
+.nav-bar .logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.nav-bar a {
+  padding: 1em;
+}
+
+.shoe-detail-section {
+  border: 5px green solid;
+  height: 800px;
+  display: flex;
+  flex: 1 50%;
+  order: 1;
+  align-items: center;
+}
+.shoe-detail-section .detail-items {
+  margin-left: 5%;
+  color: white;
+}
+.shoe-detail-section .detail-items p {
+  width: 600px;
+}
+.shoe-detail-section .detail-items button {
+  padding: 0;
+}
+
+.shoe-price-section {
+  border: 5px orange solid;
+  display: flex;
+  flex: 1 50%;
+  order: 2;
+  align-items: center;
+}
+
+.shoe-specifications {
+  border: 5px blue solid;
+  display: flex;
+  flex: 1 100%;
+  order: 4;
+  justify-content: flex-end;
+}
+.shoe-specifications div {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+.shoe-specifications li {
+  padding: 1em;
+}
+
+/*# sourceMappingURL=main.css.map */
