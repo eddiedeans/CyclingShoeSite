@@ -1,3 +1,11 @@
+$background : rgba(33, 44, 55, 0.728);
+
+@mixin border-radius($radius: 5px) {
+    border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
 body {
     height: 100vh;
 }
@@ -11,7 +19,7 @@ body {
 }
 
 .nav-bar {
-    border: 5px red solid;
+    // border: 5px red solid;
     display: flex; 
     justify-content: flex-end;
     flex: 1 100%;
@@ -34,20 +42,19 @@ body {
     border: 5px green solid;
     height: 800px;
     display: flex;
-    flex: 1 50%;
+    flex: 1;
     order: 1;
     align-items: center;
 
     .detail-items {
-        margin-left: 5%;
+        background: $background;
+        @include border-radius;
+        padding: 8% 5% 8% 5%;
         color: white;
-
-        p {
-            width: 600px;
-        }
 
         button {
             padding: 0;
+            color: white;
         }
     }
     
@@ -56,25 +63,35 @@ body {
 .shoe-price-section {
     border: 5px orange solid;
     display: flex;
-    flex: 1 50%;
+    flex: 1;
     order: 2;
     align-items: center;
+    color: white;
+    
 }
 
 .shoe-specifications {
-    border: 5px blue solid;
+    // border: 5px blue solid;
     display: flex;
     flex: 1 100%;
     order: 4;
     justify-content: flex-end;
+    color: white;
+    height: 150px;
 
     div {
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         list-style-type: none;
+        width: 50%;
+        background: $background;
+        @include border-radius(5px);
     }
 
     li {
-        padding: 1em;
+        display: flex;
+        flex: 1;
+        justify-content: center;
     }
 }

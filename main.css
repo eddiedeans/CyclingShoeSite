@@ -11,7 +11,6 @@ body {
 }
 
 .nav-bar {
-  border: 5px red solid;
   display: flex;
   justify-content: flex-end;
   flex: 1 100%;
@@ -31,43 +30,55 @@ body {
   border: 5px green solid;
   height: 800px;
   display: flex;
-  flex: 1 50%;
+  flex: 1;
   order: 1;
   align-items: center;
 }
 .shoe-detail-section .detail-items {
-  margin-left: 5%;
+  background: rgba(33, 44, 55, 0.728);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  padding: 8% 5% 8% 5%;
   color: white;
-}
-.shoe-detail-section .detail-items p {
-  width: 600px;
 }
 .shoe-detail-section .detail-items button {
   padding: 0;
+  color: white;
 }
 
 .shoe-price-section {
   border: 5px orange solid;
   display: flex;
-  flex: 1 50%;
+  flex: 1;
   order: 2;
   align-items: center;
+  color: white;
 }
 
 .shoe-specifications {
-  border: 5px blue solid;
   display: flex;
   flex: 1 100%;
   order: 4;
   justify-content: flex-end;
+  color: white;
+  height: 150px;
 }
 .shoe-specifications div {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   list-style-type: none;
+  width: 50%;
+  background: rgba(33, 44, 55, 0.728);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 .shoe-specifications li {
-  padding: 1em;
+  display: flex;
+  flex: 1;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
