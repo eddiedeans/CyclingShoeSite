@@ -7,78 +7,86 @@ body {
   flex-flow: row wrap;
   background: url(./images/image.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
-
-.nav-bar {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1 100%;
-  height: 100px;
-  align-items: center;
-}
-.nav-bar .logo {
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-}
-.nav-bar a {
-  padding: 1em;
-}
-
-.shoe-detail-section {
-  border: 5px green solid;
+.container-1 .shoe-detail-section {
   height: 800px;
   display: flex;
-  flex: 1;
+  flex: 1 100%;
   order: 1;
   align-items: center;
 }
-.shoe-detail-section .detail-items {
+.container-1 .shoe-detail-section .detail-items {
   background: rgba(33, 44, 55, 0.728);
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   padding: 8% 5% 8% 5%;
+  width: 100%;
   color: white;
 }
-.shoe-detail-section .detail-items button {
-  padding: 0;
-  color: white;
-}
-
-.shoe-price-section {
-  border: 5px orange solid;
-  display: flex;
-  flex: 1;
-  order: 2;
-  align-items: center;
+.container-1 .shoe-detail-section .detail-items button {
+  padding: 10px;
+  background: #d25a5a;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   color: white;
 }
 
-.shoe-specifications {
-  display: flex;
-  flex: 1 100%;
-  order: 4;
-  justify-content: flex-end;
-  color: white;
-  height: 150px;
-}
-.shoe-specifications div {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style-type: none;
-  width: 50%;
+.nav-bar {
   background: rgba(33, 44, 55, 0.728);
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 100%;
+  height: 100px;
+  align-items: center;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
-.shoe-specifications li {
+.nav-bar .logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  font-size: 1.8em;
+}
+.nav-bar a {
+  color: white;
+  padding: 1em;
+  font-size: 1.2em;
+}
+
+.container-2 {
+  background: #212c37;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.container-2 h2 {
+  display: flex;
+  flex: 1 100%;
+  justify-content: center;
+  color: white;
+  margin-top: 4%;
+}
+.container-2 .shirt-item {
   display: flex;
   flex: 1;
-  justify-content: center;
+  flex-direction: column;
+  margin: 15% 1%;
+}
+.container-2 .shirt-item h2 {
+  text-align: center;
+  color: white;
+}
+.container-2 .shirt-item img {
+  height: 100px;
+  width: 100%;
+  border-radius: 5%;
+}
+.container-2 .shirt-item img:hover {
+  border: 3px solid red;
 }
 
 /*# sourceMappingURL=main.css.map */

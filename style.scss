@@ -12,86 +12,102 @@ body {
 .container-1 {
     display: flex;
     flex-flow: row wrap;
-    background: url(./images/image.png);
+    background: url(./images/image.png) ;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+
+    .shoe-detail-section {
+        height: 800px;
+        display: flex;
+        flex: 1 100%;
+        order: 1;
+        align-items: center;
+    
+        .detail-items {
+            background: $background;
+            @include border-radius;
+            padding: 8% 5% 8% 5%;
+            width: 100%;
+            color: white;
+    
+            button {
+                padding: 10px;
+                background: rgb(210, 90, 90);
+                @include border-radius;
+                color: white;
+            }
+        }
+        
+    }
 
 }
 
 .nav-bar {
     // border: 5px red solid;
+    background: $background;
     display: flex; 
     justify-content: flex-end;
     flex: 1 100%;
     height: 100px;
     align-items: center;
+    @include border-radius;
 
     .logo {
         margin-right: auto;
         display: flex;
         align-items: center;
+        font-size: 1.8em;
     }
 
     a {
+        color: white;   
         padding: 1em;
+        font-size: 1.2em;
     }
 
 }
 
-.shoe-detail-section {
-    border: 5px green solid;
-    height: 800px;
+
+
+.container-2 {
+    background: rgb(33, 44, 55);
     display: flex;
-    flex: 1;
-    order: 1;
-    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
 
-    .detail-items {
-        background: $background;
-        @include border-radius;
-        padding: 8% 5% 8% 5%;
-        color: white;
 
-        button {
-            padding: 0;
-            color: white;
-        }
-    }
-    
-}
-
-.shoe-price-section {
-    border: 5px orange solid;
-    display: flex;
-    flex: 1;
-    order: 2;
-    align-items: center;
-    color: white;
-    
-}
-
-.shoe-specifications {
-    // border: 5px blue solid;
-    display: flex;
-    flex: 1 100%;
-    order: 4;
-    justify-content: flex-end;
-    color: white;
-    height: 150px;
-
-    div {
+    h2 {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        list-style-type: none;
-        width: 50%;
-        background: $background;
-        @include border-radius(5px);
+        flex: 1 100%;
+        justify-content: center;
+        color: white;
+        margin-top: 4%;
     }
 
-    li {
+    .shirt-item {
         display: flex;
         flex: 1;
-        justify-content: center;
+        flex-direction: column;
+        margin: 15% 1%;
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+
+        img {
+            height: 100px;
+            width: 100%;
+            border-radius: 5%;
+        }
+
+        img:hover {
+            border: 3px solid red;
+        }
     }
 }
+
+.container-3 {
+
+}
+
